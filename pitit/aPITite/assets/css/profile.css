@@ -1,0 +1,200 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #7ED994;
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar {
+    width: 0vw;      
+    background: rgba(0, 0, 0, 0)
+   }
+
+#logo{
+    width: 4vw;
+}
+
+header{
+    background-color: #D4E5FA;
+    width: 100%;
+    height: 3vw;
+}
+
+#nucleo{
+    width: 70vw;
+    height: 87vh;
+    margin-left: 15vw;
+    margin-top: 3vh;
+    
+}
+
+#s1{
+    background-color: white;
+    display: inline-block;
+    width: 18vw;
+    height: 22vw;
+    border-radius: 2vh;
+    border-style: solid;
+    border-width: 0.1vw;
+    box-shadow: 0 4px 10px rgb(0 0 0 / 0.5);
+}
+
+#s2{
+    position: absolute;
+    display: inline-block;
+    background-color: white;
+    width: 50vw;
+    height: 30vw;
+    border-radius: 2vh;
+    box-shadow: 0.5vh 0.5vh 4px #8D8B8B;
+}
+
+#ss2{
+    position: absolute;
+    display: inline-block;
+    background-color: white;
+    width: 50vw;
+    height: 8vw;
+    margin-left: 1vw;
+    border-radius: 2vh;
+    border-style: solid;
+    border-width: 0.1vw;
+    box-shadow: 0 4px 10px rgb(0 0 0 / 0.5);
+}
+
+#s3{
+    font-size: 2.5vw;
+    margin-left: 1vw;
+}
+
+#s4{
+    color: white;
+    width: 12vw;
+    height: 12vw;
+    margin-left: 3vw;
+    margin-top: 1vw;
+    border-radius: 100%;
+}
+
+#s8{
+    text-align: center;
+    width: 14vw;
+    height: 5vh;
+    margin-left: 2vw;
+    border-radius: 1vh;
+    background-color: #8491D9;
+    border: none;
+    color: white;
+    
+}
+
+img{
+    width: 100%;
+}
+
+#s6{
+    width: 100%;
+}
+
+#s7{
+    width: 4vw;
+    margin-left: 7vw;
+    opacity: 50%;
+}
+
+
+/* estrela*/
+
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 0.3rem;
+    --stroke: #666;
+    --fill: #ffc73a;
+  }
+  
+  .rating input {
+    appearance: unset;
+  }
+  
+  .rating label {
+    cursor: pointer;
+  }
+  
+  .rating svg {
+    width: 2rem;
+    height: 2rem;
+    overflow: visible;
+    fill: transparent;
+    stroke: var(--stroke);
+    stroke-linejoin: bevel;
+    stroke-dasharray: 12;
+    animation: idle 4s linear infinite;
+    transition: stroke 0.2s, fill 0.5s;
+  }
+  
+  @keyframes idle {
+    from {
+      stroke-dashoffset: 24;
+    }
+  }
+  
+  .rating label:hover svg {
+    stroke: var(--fill);
+  }
+  
+  .rating input:checked ~ label svg {
+    transition: 0s;
+    animation: idle 4s linear infinite, yippee 0.75s backwards;
+    fill: var(--fill);
+    stroke: var(--fill);
+    stroke-opacity: 0;
+    stroke-dasharray: 0;
+    stroke-linejoin: miter;
+    stroke-width: 8px;
+  }
+  
+  @keyframes yippee {
+    0% {
+      transform: scale(1);
+      fill: var(--fill);
+      fill-opacity: 0;
+      stroke-opacity: 1;
+      stroke: var(--stroke);
+      stroke-dasharray: 10;
+      stroke-width: 1px;
+      stroke-linejoin: bevel;
+    }
+  
+    30% {
+      transform: scale(0);
+      fill: var(--fill);
+      fill-opacity: 0;
+      stroke-opacity: 1;
+      stroke: var(--stroke);
+      stroke-dasharray: 10;
+      stroke-width: 1px;
+      stroke-linejoin: bevel;
+    }
+  
+    30.1% {
+      stroke: var(--fill);
+      stroke-dasharray: 0;
+      stroke-linejoin: miter;
+      stroke-width: 8px;
+    }
+  
+    60% {
+      transform: scale(1.2);
+      fill: var(--fill);
+    }
+  }
+  

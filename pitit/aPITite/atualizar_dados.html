@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style-c.css">
+    <title>Formulário Cadastro</title>
+</head>
+
+<body>
+    
+        <div class="form">
+            <form name="frmAtualizarDados" method="post" action="pagina_de_usuario.html">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Atualizar dados pessoais </h1>
+                    </div>
+                    <div class="login-button">
+                       
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="cpf"> Diga seu CPF:</label>
+                        <input id="cpf" type="text" name="cpf" placeholder="Digite seu cpf" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="name"> Novo Nome</label>
+                        <input id="name" type="text" name="new_name" placeholder="Digite seu nome" required>
+                    </div>
+
+                    
+                    <div class="input-box">
+                        <label for="email">Novo E-mail*</label>
+                        <input id="email" type="email" name="new_email" placeholder="Digite seu e-mail" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="new_phone">Novo Celular*</label>
+                        <input id="new_phone" type="tel" name="new_phone" placeholder="(xx) xxxx-xxxx" maxlength="11" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="password">Nova Senha</label>
+                        <input id="password" type="password" name="new_password" placeholder="Digite a nova senha" required>
+                    </div>
+
+
+                    <div class="input-box">
+                        <label for="confirmPassword">Confirmar Senha</label>
+                        <input id="confirmPassword" type="password" name="confirmPassword" placeholder="Confirme sua nova senha" required>
+                    </div>
+
+                  </div>
+
+                  <div class="continue-button">
+                  <a href="pagina_de_usuario.html"> <button  type="submit" name="confirmar" id="confirmar" ><a>Confirmar</button></a></a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
