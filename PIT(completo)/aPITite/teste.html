@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style-g.css">
+</head>
+<body>
+    <button class="open-button" onclick="openForm()">Pop-up Teste</button>
+
+    <div class="form-popup" id="gravidade">
+        <form action="assets/php/gravidade.php" method="post" class="form-container">
+            <h4>Por favor, diga-nos a quantidade de feridos:</h4>
+            
+            <input type="radio" id="1" name="qtd_feridos" value="1">
+            <label for="1">1</label><br>
+
+            <input type="radio" id="2" name="qtd_feridos" value="2">
+            <label for="2">2</label><br>
+
+            <input type="radio" id="3" name="qtd_feridos" value="3">
+            <label for="3">3</label><br>
+
+            <input type="radio" id="4" name="qtd_feridos" value="4">
+            <label for="4">4</label><br>
+
+            <input type="radio" id="4+" name="qtd_feridos" value="4 ou mais">
+            <label for="4+">4 ou mais</label><br><br>
+
+            <h4>Por favor, diga-nos a gravidade do acidente:</h4>
+            
+            <input type="radio" id="ileso" name="gravidade" value="Ileso">
+            <label for="ileso">Ileso (Ex: arranhões leves na pele)</label><br>
+
+            <input type="radio" id="ferido-leve" name="gravidade" value="Ferido leve">
+            <label for="ferido-leve">Ferido leve (Ex: torção)</label><br>
+
+            <input type="radio" id="ferido-grave" name="gravidade" value="Ferido grave">
+            <label for="ferido-grave">Ferido grave (Ex: fratura exposta)</label><br>
+
+            <input type="radio" id="morto" name="gravidade" value="Morto">
+            <label for="morto">Morto (Ex: traumatismo craniano fatal)</label><br><br>
+
+            <h4>Por favor, diga-nos o endereço do acidente:</h4><br>
+            <textarea name="endereco" id="endereco" cols="50" rows="5"></textarea>
+
+
+            <button type="submit" class="btn">Enviar</button>
+            <button type="button" class="btn" onclick="closeForm()">Cancelar</button>
+        </form>
+    </div>
+
+    <script src="assets/js/popup.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style-c.css">
+    <title>Formulario de Cadastro</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form-image">
+            <img src="assets/img/safeappLogoGrande2.png" alt="">
+        </div>
+        <form name="frmCadastro" method="post" id="login_form" action="assets/php/conection.php"class="form">
+
+            <div action="#">
+             <div class="form-header">
+                <div class="title">
+                    <h1>Cadastre-se</h1>
+                </div>
+
+                <div class="login-button">
+                    <a href="entrar.html">Entrar</a>
+                </div>
+
+             </div> 
+
+             <div class="input-group">
+                <div class="input-box">
+                    <label for="name"> Nome</label>
+                    <input id="name" type="text" name="name" placeholder="Digite seu nome">
+                </div>
+
+                <div class="input-box">
+                    <label for="cpf">Cpf</label>
+                    <input type="text" class="form-control cpf-mask" placeholder="Ex.: 000.000.000-00" name="cpf" id="cpf"  maxlength="14" oninput="cpf_mask()">
+
+                </div>
+                <div class="input-box">
+                    <label for="email">E-mail</label>
+                    <input id="email" type="email" name="email" placeholder="Digite seu e-mail">
+                </div>
+
+                <div class="input-box">
+                    <label for="phone">Celular</label>
+                    <input id="phone" type="tel" name="phone" placeholder="(xx) xxxx-xxxx" maxlength="14" oninput=mascara_telefone()>
+                </div>
+
+                <div class="input-box">
+                    <label for="password">Senha</label>
+                    <input id="password" type="password" name="password" placeholder="Digite sua senha">
+                </div>
+
+                    <div class="input-box">
+                        <label for="confirmPassword">Confirme sua Senha</label>
+                        <input id="confirmPassword" type="password" name="confirmPassword" placeholder="Digite sua senha novamente">
+                    </div>
+
+             </div>        
+            </div>
+
+            <div class="continue-button">
+                <button  type="submit" name="cadastrar" id="enviar" value="Cadastrar">Cadastrar</button>
+            </div>
+
+        </form>
+
+    </div>
+    
+
+</body>
+<script src="assets/js/cad_masc.js"></script>
+
+
+
+</html>

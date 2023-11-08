@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+*{
+font-family: 'Poppins', sans-serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+:root {
+    /* Light */
+    --color-light-50: #f8fafc;
+    
+   /* Dark */
+    --color-dark-50: #797984;
+    --color-dark-100: #312d37;
+    --color-dark-900: #000;
+
+}
+
+
+.form-popup{
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);  
+display: none;
+position: fixed;
+z-index: 9;
+}
+
+.form-container{
+border: 1px solid;
+border-color: #7ED994;
+border-radius: 5px;
+padding: 10px;
+background-color: var(--color-light-50);
+}
+
+.form-container input[type=radio]{
+padding: 15px;
+border: none;
+
+}
+
+.form-container .btn {
+padding: 16px 20px;
+width: 100%;
+margin-bottom:10px;
+border: none;
+background:#8491D9;
+border-radius: 3px;
+color: var(--color-light-50);
+font-weight: bold;
+cursor: pointer;
+opacity: .7;
+}
+.form-container .btn:hover {
+    transition: .3s;
+    transform: scale(1.03);
+    opacity: 1;
+}
+
+.form-popup p{
+font-weight: lighter;
+margin-bottom: 2%;
+}
+
+nav{
+    background-color: #7ED994;
+}
